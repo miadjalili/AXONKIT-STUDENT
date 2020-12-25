@@ -1,0 +1,43 @@
+
+/* Class = "UILabel"; text = "Already have an account?"; ObjectID = "1PE-H6-hg3"; */
+"1PE-H6-hg3.text" = "Already have an account?";
+
+/* Class = "UITextField"; placeholder = "Phone Number, email"; ObjectID = "CFM-hi-zUu"; */
+"CFM-hi-zUu.placeholder" = "Phone Number, email";
+
+/* Class = "UILabel"; text = "Forgot your password? "; ObjectID = "Cie-Nz-OjD"; */
+"Cie-Nz-OjD.text" = "Forgot your password? ";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "HR0-WB-Hcq"; */
+"HR0-WB-Hcq.normalTitle" = "العربیه";
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "Hkw-h0-0xI"; */
+"Hkw-h0-0xI.normalTitle" = "Log in";
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "SQb-lP-3eq"; */
+"SQb-lP-3eq.normalTitle" = "Log in";
+
+/* Class = "UISegmentedControl"; alp-bR-sTp.segmentTitles[0] = "PHONE"; ObjectID = "alp-bR-sTp"; */
+"alp-bR-sTp.segmentTitles[0]" = "PHONE";
+
+/* Class = "UISegmentedControl"; alp-bR-sTp.segmentTitles[1] = "EMAIL"; ObjectID = "alp-bR-sTp"; */
+"alp-bR-sTp.segmentTitles[1]" = "EMAIL";
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "fEe-Ab-BYC"; */
+"fEe-Ab-BYC.normalTitle" = "Log in";
+
+/* Class = "UIButton"; normalTitle = "We help you sign in."; ObjectID = "jXQ-PR-dbq"; */
+"jXQ-PR-dbq.normalTitle" = "We help you sign in.";
+
+/* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "mlb-jS-y9N"; */
+"mlb-jS-y9N.normalTitle" = "Sign up";
+
+/* Class = "UILabel"; text = "We use Phone or Email for securing your account and updates. "; ObjectID = "o3l-T5-EhR"; */
+"o3l-T5-EhR.text" = "We use Phone or Email for securing your account and updates. ";
+
+/* Class = "UITextField"; placeholder = "Paasword"; ObjectID = "wKg-PB-0mb"; */
+"wKg-PB-0mb.placeholder" = "Paasword";
+
+/* Class = "UILabel"; text = "Don't have an account?"; ObjectID = "yea-tt-55O"; */
+"yea-tt-55O.text" = "Don't have an account?";
+

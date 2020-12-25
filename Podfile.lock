@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (5.1.0)
+  - FlagPhoneNumber (0.8.0):
+    - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
+  - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
+  - FontAwesome.swift (1.9.0)
+  - IQKeyboardManagerSwift (6.3.0)
+  - Localize-Swift (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
+    - Localize-Swift/UIKit (= 3.2.0)
+  - Localize-Swift/LocalizeSwiftCore (3.2.0)
+  - Localize-Swift/UIKit (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore
+  - SideMenu (6.4.8)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.1)
+  - FlagPhoneNumber
+  - FontAwesome.swift (~> 1.9.0)
+  - IQKeyboardManagerSwift (= 6.3.0)
+  - Localize-Swift (~> 3.2)
+  - SideMenu (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FlagPhoneNumber
+    - FontAwesome.swift
+    - IQKeyboardManagerSwift
+    - Localize-Swift
+    - SideMenu
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
+  FontAwesome.swift: a403b88cec950511745ba8f2decd1b6a07346d13
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
+  SideMenu: 4a891be552d30bb6fa87ad404d62e485f8450c34
+
+PODFILE CHECKSUM: 4bdbc89e70a278fd0631f1d70490a34fa6233c95
+
+COCOAPODS: 1.9.1

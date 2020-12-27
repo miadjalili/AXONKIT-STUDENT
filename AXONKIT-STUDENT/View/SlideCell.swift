@@ -34,6 +34,20 @@ class SlideCell: UITableViewCell, AVAudioRecorderDelegate{
     @IBOutlet weak var TimeLableForCell: UILabel!
     
     
+    static var cellIdentifire: String {
+          get  {
+              return "slideCell"
+              
+          }
+      }
+      
+    static func register() -> UINib {
+          
+     return UINib(nibName: "SlideCell", bundle: nil)
+          
+      }
+      
+    
     // MARK: - Variabels
    
     weak var delegate :presentalert?

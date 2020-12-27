@@ -12,7 +12,7 @@ class TasksViewController: UIViewController {
 
     
     var toolBar = UIToolbar()
-    var datePicker  = UIDatePicker()
+    var datePicker: UIDatePicker!
     
     
     @IBOutlet weak var taskView: UIView!
@@ -77,21 +77,9 @@ class TasksViewController: UIViewController {
         self.present(actionSheet, animated: true, completion: nil)
     }
                
-        
-        
-        
-        
-        
-  
-    
-    
     
     @IBAction func fromDateBTnAction(_ sender: UIButton) {
-        
-        
-        
-        
-        datePicker = UIDatePicker.init()
+        datePicker = UIDatePicker()
 
         datePicker.minimumDate = Calendar.current.date(byAdding: .year, value: 0, to: Date())
         datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 20, to: Date())
@@ -123,18 +111,21 @@ class TasksViewController: UIViewController {
             
         if let date = sender?.date {
           //  print("Picked the date \(dateFormatter.string(from: date))")
-            if fromDateBTn.isSelected == true{
+    //        if fromDateBTn.isSelected == true{
             fromDateBTn.setTitle(dateFormatter.string(from: date), for: .normal)
-            }
-            if toDateBTn.isSelected == true{
-                toDateBTn.setTitle(dateFormatter.string(from: date), for: .normal)
-            }
+  //          }
+//            if toDateBTn.isSelected == true{
+//                toDateBTn.setTitle(dateFormatter.string(from: date), for: .normal)
+//            }
         }
     }
 
     @objc func onDoneButtonClick() {
         toolBar.removeFromSuperview()
-        datePicker.removeFromSuperview()
+        if let datePicker = datePicker {
+            datePicker.removeFromSuperview()
+        }
+        datePicker = nil
     }
 
    
@@ -142,7 +133,7 @@ class TasksViewController: UIViewController {
     
     @IBAction func toDateBTnAction(_ sender: UIButton) {
         
-       datePicker = UIDatePicker.init()
+        datePicker = UIDatePicker()
 
             datePicker.minimumDate = Calendar.current.date(byAdding: .year, value: 0, to: Date())
             datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 20, to: Date())

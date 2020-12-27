@@ -75,11 +75,18 @@ class ViewController: UIViewController {
         }
      
         if passwordTextFiled.text!.count >= 5 && userNameTextField.text!.count >= 5 && userNameTextField.text?.isEmpty == false && passwordTextFiled.text?.isEmpty == false{
-           let appDelegate = UIApplication.shared.delegate! as! AppDelegate
-           let tabbar = self.storyboard!.instantiateViewController(withIdentifier: "idtabBar")
-           appDelegate.window?.rootViewController = tabbar
-           appDelegate.window?.makeKeyAndVisible()
-             self.navigationController?.pushViewController(tabbar, animated: true)
+            /*
+            DispatchQueue.main.async {
+                let appDelegate = UIApplication.shared.connectedScenes.first?.delegate! as! SceneDelegate
+                let tabbar = self.storyboard!.instantiateViewController(withIdentifier: "idtabBar")
+                appDelegate.window?.rootViewController = tabbar
+                appDelegate.window?.makeKeyAndVisible()
+            }
+*/
+            
+            let tabbar = self.storyboard!.instantiateViewController(withIdentifier: "idtabBar")
+            tabbar.modalPresentationStyle = .fullScreen
+            self.present(tabbar, animated: true, completion: nil)
             
             
         url.updateApi(apiUrl: k.ApiLogin.mainApi, parameters: parameters) { (response) in//only for test api

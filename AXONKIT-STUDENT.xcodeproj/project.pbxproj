@@ -28,6 +28,8 @@
 		8C3F5A2B256CEE3700377B40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3F5A28256CEE3700377B40 /* Main.storyboard */; };
 		8C3F5A2E256CF0A900377B40 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C3F5A30256CF0A900377B40 /* Localizable.strings */; };
 		8C3F5A40256D14AC00377B40 /* SignupFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F5A3F256D14AC00377B40 /* SignupFinalViewController.swift */; };
+		8C46DF0E2597955C00D8048B /* ReviewExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C46DF0D2597955C00D8048B /* ReviewExamViewController.swift */; };
+		8C46DF102597971800D8048B /* ReviewExamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C46DF0F2597971800D8048B /* ReviewExamTableViewCell.swift */; };
 		8C5E03A5257619790091D58A /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E03A4257619790091D58A /* SideMenuTableViewCell.swift */; };
 		8C603279256CDAFD00A93C23 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C603278256CDAFD00A93C23 /* SigninViewController.swift */; };
 		8C60327B256CDB3400A93C23 /* DefaultlanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C60327A256CDB3400A93C23 /* DefaultlanguageViewController.swift */; };
@@ -108,6 +110,8 @@
 		8C3F5A3D256CF26C00377B40 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ../ar.lproj/Main.strings; sourceTree = "<group>"; };
 		8C3F5A3E256CF26C00377B40 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8C3F5A3F256D14AC00377B40 /* SignupFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFinalViewController.swift; sourceTree = "<group>"; };
+		8C46DF0D2597955C00D8048B /* ReviewExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewExamViewController.swift; sourceTree = "<group>"; };
+		8C46DF0F2597971800D8048B /* ReviewExamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewExamTableViewCell.swift; sourceTree = "<group>"; };
 		8C5E03A4257619790091D58A /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		8C603278256CDAFD00A93C23 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		8C60327A256CDB3400A93C23 /* DefaultlanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultlanguageViewController.swift; sourceTree = "<group>"; };
@@ -276,10 +280,12 @@
 				8CDE16842588C21C003E01CE /* TasksViewController.swift */,
 				8CC2C751258DEB21007E5B0A /* AssignmentViewController.swift */,
 				8CC2C753258E0128007E5B0A /* AssignmentsListViewController.swift */,
+				8C46DF0D2597955C00D8048B /* ReviewExamViewController.swift */,
 				8CC2C755258E0750007E5B0A /* AnswerSheetViewController.swift */,
 				8CC2C759258E083F007E5B0A /* AnswerSheetTableViewCell.swift */,
 				8CC2C757258E078E007E5B0A /* AnswerSheetDetailsViewController.swift */,
 				8C1EDF59256BB758002D6F6E /* Assets.xcassets */,
+				8C46DF0F2597971800D8048B /* ReviewExamTableViewCell.swift */,
 			);
 			path = Contoroller;
 			sourceTree = "<group>";
@@ -462,6 +468,7 @@
 				8C13A553257238790071A53C /* OnlineClassViewController.swift in Sources */,
 				8CC965E42573AD9100309296 /* AudioCell.swift in Sources */,
 				8CC965CF2573AD6A00309296 /* AttachFileController.swift in Sources */,
+				8C46DF0E2597955C00D8048B /* ReviewExamViewController.swift in Sources */,
 				8C13A55725723E7B0071A53C /* SideMenuViewController.swift in Sources */,
 				8C603279256CDAFD00A93C23 /* SigninViewController.swift in Sources */,
 				8CC965CC2573AD6A00309296 /* MicStudentController.swift in Sources */,
@@ -474,6 +481,7 @@
 				8CC2C754258E0128007E5B0A /* AssignmentsListViewController.swift in Sources */,
 				8C1CCE4325963A22004A2367 /* UserHolder.swift in Sources */,
 				8CC965DE2573AD9100309296 /* ImageViewZoom.swift in Sources */,
+				8C46DF102597971800D8048B /* ReviewExamTableViewCell.swift in Sources */,
 				8CDE167F25888C7E003E01CE /* EducationalDossierViewController.swift in Sources */,
 				8CC2C758258E078E007E5B0A /* AnswerSheetDetailsViewController.swift in Sources */,
 				8CD1CEC9257FA738005C1A9B /* CalenderTableViewCell.swift in Sources */,

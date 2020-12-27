@@ -18,6 +18,9 @@ class AudioCell: UITableViewCell {
 //    var filePath : URL?
     
     
+    
+    
+    
     @IBOutlet weak var audioBubbl: UIView!
     @IBOutlet weak var rightImageViewAudio: UIImageView!
     @IBOutlet weak var progressAudio: UIProgressView!
@@ -35,7 +38,19 @@ class AudioCell: UITableViewCell {
 
     }
     
-    
+    static var cellIdentifire: String {
+          get  {
+              return "audioCell"
+              
+          }
+      }
+      
+    static func register() -> UINib {
+          
+     return UINib(nibName: "AudioCell", bundle: nil)
+          
+      }
+      
  
 
     override func awakeFromNib() {

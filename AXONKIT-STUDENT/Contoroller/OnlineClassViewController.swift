@@ -133,9 +133,10 @@ class OnlineClassViewController: UIViewController,AVAudioRecorderDelegate{
         TableView.delegate = self
         TableView.dataSource = self
        
+        
         TableView.register(MessageCell.register(), forCellReuseIdentifier: MessageCell.cellIdentifire)
-        TableView.register(UINib(nibName: "AudioCell", bundle: nil), forCellReuseIdentifier: "audioCell")
-        TableView.register(UINib(nibName: "SlideCell", bundle: nil), forCellReuseIdentifier: "slideCell")
+        TableView.register(AudioCell.register(), forCellReuseIdentifier: AudioCell.cellIdentifire)
+        TableView.register(SlideCell.register(), forCellReuseIdentifier: SlideCell.cellIdentifire)
         
       
         let contoroler = self.storyboard?.instantiateViewController(withIdentifier: "micStuVC") as! MicStudentController

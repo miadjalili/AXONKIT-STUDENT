@@ -82,10 +82,5 @@ extension EducationalDossierViewController: UITableViewDataSource,UITableViewDel
         
         return cell
     }
-    
-    
-    
-    
-    
-    
+
 }

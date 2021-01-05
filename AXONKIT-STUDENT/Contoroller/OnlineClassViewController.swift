@@ -101,6 +101,7 @@ class OnlineClassViewController: UIViewController,AVAudioRecorderDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.addSideMenu()
        
         
         

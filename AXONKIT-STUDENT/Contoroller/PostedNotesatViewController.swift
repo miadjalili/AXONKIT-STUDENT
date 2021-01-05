@@ -1,19 +1,18 @@
 //
-//  OnlineExamViewController.swift
+//  PostedNotesatViewController.swift
 //  AXONKIT-STUDENT
 //
-//  Created by miadjalili on 11/28/20.
-//  Copyright © 2020 MIAD. All rights reserved.
+//  Created by miadjalili on 1/2/21.
+//  Copyright © 2021 MIAD. All rights reserved.
 //
 
 import UIKit
 
-class OnlineExamViewController: UIViewController {
+class PostedNotesatViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addSideMenu()
-         print("OnlineExamViewController")
+        navigationItem.title = "Posted Notes at Online Classes"
         // Do any additional setup after loading the view.
     }
     

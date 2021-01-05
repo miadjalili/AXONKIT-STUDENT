@@ -39,18 +39,18 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
 }
 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell =  tableView.dequeueReusableCell(withIdentifier: "AnswerSheetCell", for: indexPath) as! AnswerSheetTableViewCell
+    let cell =  tableView.dequeueReusableCell(withIdentifier: "ReviewExamtCell", for: indexPath) as! ReviewExamTableViewCell
     
     
     return cell
 }
     
-func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           tableView.deselectRow(at: indexPath, animated: true)
-       
-           
-           let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "AnswerSheetDetailsVC") as! AnswerSheetDetailsViewController
-              
-           self.navigationController?.pushViewController(newViewController, animated: true)
-              }
+//func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//           tableView.deselectRow(at: indexPath, animated: true)
+//
+//
+//           let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "AnswerSheetDetailsVC") as! AnswerSheetDetailsViewController
+//
+//           self.navigationController?.pushViewController(newViewController, animated: true)
+//              }
 }

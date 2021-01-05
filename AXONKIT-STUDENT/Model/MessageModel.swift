@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct MessageModel {
-   // let sender : String
+    // let sender : String
     var body: String
     var imageSlide : UIImage?
     var replies : [AudioSlide] = []
@@ -20,6 +20,7 @@ struct MessageModel {
         self.imageSlide = imageSlide
         self.replies = replies
     }
+    
     
 }
 

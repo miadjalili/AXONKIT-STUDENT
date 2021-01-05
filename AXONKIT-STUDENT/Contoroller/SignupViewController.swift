@@ -20,7 +20,7 @@ class SignupViewController: UIViewController {
     
     @IBAction func backToLoginBTn(_ sender: UIButton) {
         
-        let contorolerBackLogin = self.storyboard?.instantiateViewController(withIdentifier: "LoginVc")as! ViewController
+        let contorolerBackLogin = self.storyboard?.instantiateViewController(withIdentifier: "LoginVc")as! LoginViewController
                        
                    self.navigationController?.pushViewController(contorolerBackLogin, animated: true)
     }

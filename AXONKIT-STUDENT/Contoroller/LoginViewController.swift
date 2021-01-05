@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import Network
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     var iconClick = true
     var url = request()//only for test api
@@ -151,8 +151,8 @@ class ViewController: UIViewController {
         showPassBT.isHidden = true
         secoCheakIm.isHidden = true
         
-        userNameTextField.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged)
-        passwordTextFiled.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged)
+        userNameTextField.addTarget(self, action: #selector(LoginViewController.textFieldDidChange(_:)), for: .editingChanged)
+        passwordTextFiled.addTarget(self, action: #selector(LoginViewController.textFieldDidChange(_:)), for: .editingChanged)
         logInBTn.layer.cornerRadius = 5
         userNameTextField.frame = CGRect(x: userNameTextField.frame.origin.x, y: userNameTextField.frame.origin.y, width: userNameTextField.frame.size.width, height: 50)
         passwordTextFiled.frame = CGRect(x: passwordTextFiled.frame.origin.x, y: passwordTextFiled.frame.origin.y, width: passwordTextFiled.frame.size.width, height: 50)
@@ -222,7 +222,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: presentalertApi{
+extension LoginViewController: presentalertApi{
     
 func alert() {
     let alert = UIAlertController(title: "Username Or Password Incorrect", message: "", preferredStyle: .alert)

@@ -1,57 +1,84 @@
 //
-//  SideMenuViewController.swift
-//  AXONKIT-STUDENT
+//  SideMenuContainer.swift
+//  sideMenu
 //
-//  Created by miadjalili on 11/28/20.
-//  Copyright © 2020 MIAD. All rights reserved.
+//  Created by Sajjad Sarkoobi on 12/26/20.
 //
 
 import UIKit
 
-class SideMenuViewController: UIViewController {
+class SideMenuContainer: UIViewController {
 
-    
-    @IBOutlet weak var TableViewSideMenu: UITableView!
-    
-    
-    
-    
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "User name or email"
-        TableViewSideMenu.isScrollEnabled = false
-        TableViewSideMenu.delegate = self
-        TableViewSideMenu.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
+        self.view.backgroundColor = .clear
         
+        self.containerView.alpha = 0
+        self.containerView.backgroundColor = UIColor.darkGray.withAlphaComponent(0.5)
         
-        print(SideMenuDataManager.shared.getSideMenuData().count)
-        print(SideMenuDataManager.shared.getSideMenuData()[3].icon)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissThisView))
+        self.containerView.addGestureRecognizer(tap)
         
-        
-        // Do any additional setup after loading the view.
+        self.tableView.transform = CGAffineTransform(translationX: -self.view.frame.width, y: 0)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
     }
-    */
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        appear()
+    }
+
+    func appear(){
+        UIView.animate(withDuration: 0.3) {
+            self.containerView.alpha = 1
+        } completion: { (_) in
+            UIView.animate(withDuration: 0.4) {
+                self.tableView.transform = .identity
+            }
+        }
+
+    }
+    
+    @objc func dismissThisView(){
+        UIView.animate(withDuration: 0.3) {
+            self.tableView.transform = CGAffineTransform(translationX: -self.view.frame.width, y: 0)
+            
+        } completion: { (_) in
+            UIView.animate(withDuration: 0.4) {
+                self.containerView.alpha = 0
+            } completion: { (_) in
+                self.dismiss(animated: false) {
+                    self.removeFromParent()
+                }
+            }
+
+           
+        }
+
+    }
 
 }
-extension SideMenuViewController: UITableViewDataSource,UITableViewDelegate {
+
+
+//MARK: -Table view
+extension SideMenuContainer : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (SideMenuDataManager.shared.getSideMenuData().count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell =  TableViewSideMenu.dequeueReusableCell(withIdentifier: "sideMenuCell", for: indexPath) as! SideMenuTableViewCell
+        let cell =  tableView.dequeueReusableCell(withIdentifier: "sideMenuCell", for: indexPath) as! SideMenuTableViewCell
         cell.viewNotifi.isHidden = true
         cell.TitleLable.text = SideMenuDataManager.shared.getSideMenuData()[indexPath.row].title.rawValue
         cell.IconImage.image = SideMenuDataManager.shared.getSideMenuData()[indexPath.row].icon
@@ -66,17 +93,13 @@ extension SideMenuViewController: UITableViewDataSource,UITableViewDelegate {
         
         return cell
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            
-        return 61.0
-      }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      tableView.deselectRow(at: indexPath, animated: true)
     
         print(indexPath.row)
     
         if indexPath.row == 0 {
-     
+     print("profileVC")
      let newViewController0 = self.storyboard?.instantiateViewController(withIdentifier: "profileVC") as! ProfileViewController
         
      self.navigationController?.pushViewController(newViewController0, animated: true)
@@ -142,36 +165,15 @@ extension SideMenuViewController: UITableViewDataSource,UITableViewDelegate {
             
         
         }
+        
         if indexPath.row == 9 {
-            let newViewController9 = self.storyboard?.instantiateViewController(withIdentifier: "ObjectionReviewVC") as! ObjectionReviewViewController
+            let newViewController9 = self.storyboard?.instantiateViewController(withIdentifier: "MyFavoritesVC") as! MyFavoritesViewController
                       
                    self.navigationController?.pushViewController(newViewController9, animated: true)
             
         
         }
-        if indexPath.row == 10 {
-            let newViewController10 = self.storyboard?.instantiateViewController(withIdentifier: "MyFavoritesVC") as! MyFavoritesViewController
-                      
-                   self.navigationController?.pushViewController(newViewController10, animated: true)
-            
         
-        }
-        
-        if indexPath.row == 11 {
-            let newViewController11 = self.storyboard?.instantiateViewController(withIdentifier: "ParentsAreaVC") as! ParentsAreaViewController
-                      
-                   self.navigationController?.pushViewController(newViewController11, animated: true)
-            
-        
-        }
-        
-        if indexPath.row == 12 {
-            let newViewController12 = self.storyboard?.instantiateViewController(withIdentifier: "SettingVC") as! SettingViewController
-
-                   self.navigationController?.pushViewController(newViewController12, animated: true)
-            
-        
-        }
         
     }
     

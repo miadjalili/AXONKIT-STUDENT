@@ -1,19 +1,18 @@
 //
-//  OnlineExamViewController.swift
+//  ObjectionReviewDetailsViewController.swift
 //  AXONKIT-STUDENT
 //
-//  Created by miadjalili on 11/28/20.
-//  Copyright © 2020 MIAD. All rights reserved.
+//  Created by miadjalili on 1/1/21.
+//  Copyright © 2021 MIAD. All rights reserved.
 //
 
 import UIKit
 
-class OnlineExamViewController: UIViewController {
+class ObjectionReviewDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addSideMenu()
-         print("OnlineExamViewController")
+
         // Do any additional setup after loading the view.
     }
     

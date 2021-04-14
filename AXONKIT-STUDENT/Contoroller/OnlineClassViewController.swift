@@ -33,6 +33,9 @@ class OnlineClassViewController: UIViewController,AVAudioRecorderDelegate{
 
     
     
+    @IBOutlet weak var checkView: UIView!
+    
+    
     @IBOutlet weak var recordView: UIView!
     @IBOutlet weak var TableView: UITableView!
     @IBOutlet weak var messageTextField: UITextField!
@@ -52,8 +55,9 @@ class OnlineClassViewController: UIViewController,AVAudioRecorderDelegate{
     
     var micStuBtn : SideMenuNavigationController?
     var fileAttachSlide:SideMenuNavigationController?
-   
+    var server = request()
     var messages : [MessageModel] = []
+    //var cheakClass = [ModelCheckClass]
     weak var delegate :DocuFile?
     let screenSize:CGRect = UIScreen.main.bounds
     let customSideMenuManager = SideMenuManager()
@@ -100,6 +104,32 @@ class OnlineClassViewController: UIViewController,AVAudioRecorderDelegate{
     //MARK: - DidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.checkView.backgroundColor = UIColor.darkGray.withAlphaComponent(0.5)
+        self.checkView.isHidden = false
+        
+        server.CheakClass(apiUrl: chatapp.cheakClass.cheakClass ) { (response) in
+            if response.ClassStatus == false {
+                self.checkView.isHidden = false
+                let alert = UIAlertController(title: "Attention!", message: "Class will be start at 15:00", preferredStyle: .alert)
+                let action = UIAlertAction(title: "Ok", style: .default) { (action) in
+                    
+                    self.tabBarController?.selectedIndex = 1
+                   
+                }
+                alert.addAction(action)
+                self.present(alert,animated: true,completion: nil)
+
+            }
+            if response.ClassStatus == true {
+                
+                self.checkView.isHidden = true
+                
+            }
+            
+    
+            print("OnlineClass\(response)")
+        }
+        
         
         self.addSideMenu()
        

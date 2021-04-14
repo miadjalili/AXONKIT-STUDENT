@@ -21,12 +21,20 @@ struct k {
         static let  RecovertPassword = "\(server)/auth/recovert-password"
         static let Resendconfirmation = "\(server)/auth/resendconfirmation"
     }
-    
-    
-    
-    
-    
-    
-    
-    
 }
+
+
+
+    let server2 = "http://192.168.1.111:8089"
+    struct chatapp {
+        
+        struct cheakClass {
+            static let cheakClass = "\(server2)/chatapp/checkclass"
+        }
+    
+    }
+    
+    
+    
+    
+

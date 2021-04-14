@@ -9,7 +9,10 @@
 import UIKit
 
 class SignupFinalViewController: UIViewController {
-
+  
+   var number = ""
+   var email = ""
+    var typeCode =  0
     @IBOutlet weak var fullNameText: UITextField!
     @IBOutlet weak var surNameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
@@ -20,26 +23,22 @@ class SignupFinalViewController: UIViewController {
     @IBOutlet weak var nextBTn: UIButton!
     
     @IBAction func nextBTnAct(_ sender: UIButton) {
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        let contorolerConfirmCode = self.storyboard?.instantiateViewController(withIdentifier: "confirmathionVC")as! ConfirmathionCodeViewController
-            
-        self.navigationController?.pushViewController(contorolerConfirmCode, animated: true)
-        
-        
-        
+
+//        let contorolerConfirmCode = self.storyboard?.instantiateViewController(withIdentifier: "confirmathionVC")as! ConfirmathionCodeViewController
+//        contorolerConfirmCode.parameters = ModelSignUpPost(Email: email, Phonenumber: number, Password:passwordText.text!, FirstName: fullNameText.text!, SurName: surNameText.text!, UserType: "APP_TEACHER_IOS")
+//        contorolerConfirmCode.statusCode = 1
+//        contorolerConfirmCode.singupFinal = true
+//        if typeCode == 1 {
+//            contorolerConfirmCode.numberOrGmail = email
+//        }
+//        if typeCode == 2{
+//            contorolerConfirmCode.numberOrGmail = number
+//        }
+//        self.navigationController?.pushViewController(contorolerConfirmCode, animated: true)
+
+
     }
-    
-    
-    
+   // }
     
     
     override func viewDidLoad() {
@@ -63,3 +62,4 @@ class SignupFinalViewController: UIViewController {
     */
 
 }
+

@@ -79,7 +79,7 @@ class CalenderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dateBakgroundView.layer.borderWidth = 0.5
-        navigationItem.leftBarButtonItem?.tintColor = .white
+        
         self.addSideMenu()
         
         

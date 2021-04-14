@@ -16,6 +16,7 @@ protocol presentalertApi:AnyObject {
 class request{
     
     weak var delegate :presentalertApi?
+    
     func updateApi (apiUrl : String ,parameters: [String: String],  ComplishiomHandelar : @escaping (ModelLogin) ->() ){
         let request = AF.request(apiUrl, method: .post, parameters: parameters,encoding: JSONEncoding.default)
             .responseDecodable(of: ModelLogin.self)
@@ -76,5 +77,39 @@ class request{
     }
     
     }
+    
+    
+    
+    
+    func CheakClass (apiUrl : String , ComplishiomHandelar : @escaping (ModelCheckClass) ->() ){
+          
+        let request = AF.request(apiUrl , method: .post,parameters: nil,encoding: JSONEncoding.default)
+          request.responseDecodable(of : ModelCheckClass.self) { (response) in
+           print("CheakClass  \(response)")
+            switch response.result {
+                
+            case .success(let data):
+                guard let requsetapi = response.value else {return}
+                ComplishiomHandelar (
+
+                    data
+                )
+            //print(data)
+            case .failure(let err):
+                print(err)
+            }
+        
+             
+
+             
+          }
+
+      }
+    
+    
+    
+    
+    
+    
 }
 

@@ -22,7 +22,7 @@ class ConfirmathionCodeViewController: UIViewController {
     
     @IBAction func backToLogin(_ sender: UIButton) {
         
-        let contorolerBackLogin = self.storyboard?.instantiateViewController(withIdentifier: "LoginVc")as! OnlineClassViewController
+        let contorolerBackLogin = self.storyboard?.instantiateViewController(withIdentifier: "LoginVc")as! LoginViewController
             
         self.navigationController?.pushViewController(contorolerBackLogin, animated: true)
     }

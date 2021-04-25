@@ -53,7 +53,6 @@
 		8C9B2886259F271900AD4B5E /* ObjectionReviewDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B2885259F271900AD4B5E /* ObjectionReviewDetailsViewController.swift */; };
 		8C9E60CD2584D4DE005C7093 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E60CC2584D4DE005C7093 /* ProfileViewController.swift */; };
 		8CAF45F92574E6C2001B7449 /* sideMenuDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF45F82574E6C2001B7449 /* sideMenuDataModel.swift */; };
-		8CBC61C625B5680F006EC11B /* SignupFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC61C525B5680F006EC11B /* SignupFinalViewController.swift */; };
 		8CC2C752258DEB21007E5B0A /* AssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2C751258DEB21007E5B0A /* AssignmentViewController.swift */; };
 		8CC2C754258E0128007E5B0A /* AssignmentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2C753258E0128007E5B0A /* AssignmentsListViewController.swift */; };
 		8CC2C756258E0750007E5B0A /* AnswerSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2C755258E0750007E5B0A /* AnswerSheetViewController.swift */; };
@@ -92,6 +91,10 @@
 		8CDE16832588AB1F003E01CE /* InviteFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDE16822588AB1E003E01CE /* InviteFriendsViewController.swift */; };
 		8CDE16852588C21C003E01CE /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDE16842588C21C003E01CE /* TasksViewController.swift */; };
 		8CE68D7B25A466F100A04415 /* ModelCheckClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE68D7A25A466F100A04415 /* ModelCheckClass.swift */; };
+		8CFFEDB1262FF72500B5A951 /* SignupFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFFEDB0262FF72500B5A951 /* SignupFinalViewController.swift */; };
+		8CFFEDB42630003D00B5A951 /* ListOfCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFFEDB32630003D00B5A951 /* ListOfCourseViewController.swift */; };
+		8CFFEDB72630006500B5A951 /* EachCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFFEDB62630006500B5A951 /* EachCourseViewController.swift */; };
+		8CFFEDBA2630076500B5A951 /* ListOfCourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFFEDB92630076500B5A951 /* ListOfCourseTableViewCell.swift */; };
 		A55CB6986A77FB695593967F /* libPods-AXONKIT-STUDENT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A21EE9ABFD7343B6C2311D4 /* libPods-AXONKIT-STUDENT.a */; };
 /* End PBXBuildFile section */
 
@@ -155,7 +158,6 @@
 		8C9B2885259F271900AD4B5E /* ObjectionReviewDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectionReviewDetailsViewController.swift; sourceTree = "<group>"; };
 		8C9E60CC2584D4DE005C7093 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8CAF45F82574E6C2001B7449 /* sideMenuDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideMenuDataModel.swift; sourceTree = "<group>"; };
-		8CBC61C525B5680F006EC11B /* SignupFinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupFinalViewController.swift; sourceTree = "<group>"; };
 		8CC2C751258DEB21007E5B0A /* AssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentViewController.swift; sourceTree = "<group>"; };
 		8CC2C753258E0128007E5B0A /* AssignmentsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsListViewController.swift; sourceTree = "<group>"; };
 		8CC2C755258E0750007E5B0A /* AnswerSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerSheetViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,10 @@
 		8CDE16822588AB1E003E01CE /* InviteFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewController.swift; sourceTree = "<group>"; };
 		8CDE16842588C21C003E01CE /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		8CE68D7A25A466F100A04415 /* ModelCheckClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCheckClass.swift; sourceTree = "<group>"; };
+		8CFFEDB0262FF72500B5A951 /* SignupFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFinalViewController.swift; sourceTree = "<group>"; };
+		8CFFEDB32630003D00B5A951 /* ListOfCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCourseViewController.swift; sourceTree = "<group>"; };
+		8CFFEDB62630006500B5A951 /* EachCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachCourseViewController.swift; sourceTree = "<group>"; };
+		8CFFEDB92630076500B5A951 /* ListOfCourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCourseTableViewCell.swift; sourceTree = "<group>"; };
 		ECCFB67D302F13EA1173EA72 /* Pods-AXONKIT-STUDENT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXONKIT-STUDENT.release.xcconfig"; path = "Target Support Files/Pods-AXONKIT-STUDENT/Pods-AXONKIT-STUDENT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -297,7 +303,6 @@
 				8C60327A256CDB3400A93C23 /* DefaultlanguageViewController.swift */,
 				8C3F5A1E256CE3A600377B40 /* LanguageTableViewCell.swift */,
 				8CCF2AB4256E2B2200A32B7D /* ForgetPasswordViewController.swift */,
-				8CBC61C525B5680F006EC11B /* SignupFinalViewController.swift */,
 				8CCF2AB6256E3EBD00A32B7D /* ConfirmathionCodeViewController.swift */,
 				8C33FC5A256F8277000BE55C /* PasswordViewController.swift */,
 				8C33FC5E256FB867000BE55C /* TabBarViewController.swift */,
@@ -346,6 +351,10 @@
 				8CC4E31025A1C00700260B2B /* SettingViewController.swift */,
 				8CC4E31425A1C34800260B2B /* SettingTableViewCell.swift */,
 				8C1EDF59256BB758002D6F6E /* Assets.xcassets */,
+				8CFFEDB0262FF72500B5A951 /* SignupFinalViewController.swift */,
+				8CFFEDB32630003D00B5A951 /* ListOfCourseViewController.swift */,
+				8CFFEDB62630006500B5A951 /* EachCourseViewController.swift */,
+				8CFFEDB92630076500B5A951 /* ListOfCourseTableViewCell.swift */,
 			);
 			path = Contoroller;
 			sourceTree = "<group>";
@@ -522,10 +531,12 @@
 				8C9B287A259E365E00AD4B5E /* ViewControllerExtension.swift in Sources */,
 				8C6AAF2925A063EB00CD169B /* ParentsAreaViewController.swift in Sources */,
 				8C9B2881259F1FCD00AD4B5E /* ObjectionReviewTableViewCell.swift in Sources */,
-				8CBC61C625B5680F006EC11B /* SignupFinalViewController.swift in Sources */,
+				8CFFEDB1262FF72500B5A951 /* SignupFinalViewController.swift in Sources */,
 				8C33FC5B256F8277000BE55C /* PasswordViewController.swift in Sources */,
 				8CC965E22573AD9100309296 /* AttachFileCell.swift in Sources */,
 				8C9B2879259E365E00AD4B5E /* SideMenuContainer.swift in Sources */,
+				8CFFEDB42630003D00B5A951 /* ListOfCourseViewController.swift in Sources */,
+				8CFFEDBA2630076500B5A951 /* ListOfCourseTableViewCell.swift in Sources */,
 				8C60327D256CDBA400A93C23 /* SignupViewController.swift in Sources */,
 				8C0569C52586179600130376 /* OffLineCourseViewController.swift in Sources */,
 				8C6AAF2D25A07EFE00CD169B /* ParentsAreaAdultViewController.swift in Sources */,
@@ -552,6 +563,7 @@
 				8C6AAF2125A0576500CD169B /* MyFavoritesViewController.swift in Sources */,
 				8CC2C754258E0128007E5B0A /* AssignmentsListViewController.swift in Sources */,
 				8C6AAF2525A05A2600CD169B /* MyFavoritesTableViewCell.swift in Sources */,
+				8CFFEDB72630006500B5A951 /* EachCourseViewController.swift in Sources */,
 				8C1CCE4325963A22004A2367 /* UserHolder.swift in Sources */,
 				8CC4E31525A1C34800260B2B /* SettingTableViewCell.swift in Sources */,
 				8CC965DE2573AD9100309296 /* ImageViewZoom.swift in Sources */,

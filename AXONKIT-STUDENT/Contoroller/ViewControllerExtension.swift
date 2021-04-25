@@ -27,7 +27,7 @@ extension UIViewController {
             return
         }
         controller.modalPresentationStyle = .overFullScreen
-        
+        controller.sender = self
         self.present(controller, animated: false, completion: nil)
     }
 }

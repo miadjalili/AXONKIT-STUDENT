@@ -12,10 +12,15 @@ class SideMenuContainer: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
+    
+    
+    var sender :UIViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
         self.view.backgroundColor = .clear
         
         self.containerView.alpha = 0
@@ -24,7 +29,7 @@ class SideMenuContainer: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissThisView))
         self.containerView.addGestureRecognizer(tap)
         
-        self.tableView.transform = CGAffineTransform(translationX: -self.view.frame.width, y: 0)
+       self.tableView.transform = CGAffineTransform(translationX: -self.view.frame.width, y: 0)
     }
     
     
@@ -89,6 +94,7 @@ extension SideMenuContainer : UITableViewDelegate, UITableViewDataSource {
             cell.countNotfi.text = String(SideMenuDataManager.shared.getSideMenuData()[indexPath.row].value)
               }else if indexPath.row == 9 {
               cell.viewNotifi.isHidden = false
+                
         }
         
         return cell
@@ -96,80 +102,97 @@ extension SideMenuContainer : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      tableView.deselectRow(at: indexPath, animated: true)
     
-        print(indexPath.row)
+     
     
         if indexPath.row == 0 {
-     print("profileVC")
+     
+            dismissThisView()
      let newViewController0 = self.storyboard?.instantiateViewController(withIdentifier: "profileVC") as! ProfileViewController
-        
-     self.navigationController?.pushViewController(newViewController0, animated: true)
+    
+            self.sender?.navigationController?.pushViewController(newViewController0, animated: true)
+           
         }
         if indexPath.row == 1 {
-            
+            dismissThisView()
             let newViewController1 = self.storyboard?.instantiateViewController(withIdentifier: "OffLineCourseVC") as! OffLineCourseViewController
                
-            self.navigationController?.pushViewController(newViewController1, animated: true)
+            self.sender?.navigationController?.pushViewController(newViewController1, animated: true)
                }
         
         
         if indexPath.row == 2 {
-        
+            dismissThisView()
         let newViewController2 = self.storyboard?.instantiateViewController(withIdentifier: "DeclareAnAbsenceVC") as! DeclareAnAbsenceViewController
            
-        self.navigationController?.pushViewController(newViewController2, animated: true)
+            self.sender?.navigationController?.pushViewController(newViewController2, animated: true)
            }
          if indexPath.row == 3 {
+            dismissThisView()
             let newViewController3 = self.storyboard?.instantiateViewController(withIdentifier: "EducationalDossierVC") as! EducationalDossierViewController
                       
-                   self.navigationController?.pushViewController(newViewController3, animated: true)
+            self.sender?.navigationController?.pushViewController(newViewController3, animated: true)
             
         
         }
         
         if indexPath.row == 4 {
+            dismissThisView()
                    let newViewController4 = self.storyboard?.instantiateViewController(withIdentifier: "InvitefriendsVC") as! InviteFriendsViewController
                              
-                          self.navigationController?.pushViewController(newViewController4, animated: true)
+            self.sender?.self.navigationController?.pushViewController(newViewController4, animated: true)
                    
                
                }
         
         if indexPath.row == 5 {
+            dismissThisView()
                           let newViewController5 = self.storyboard?.instantiateViewController(withIdentifier: "TasksVC") as! TasksViewController
                                     
-                                 self.navigationController?.pushViewController(newViewController5, animated: true)
+            self.sender?.self.navigationController?.pushViewController(newViewController5, animated: true)
                           
                       
                       }
         
         if indexPath.row == 6 {
+            dismissThisView()
                                  let newViewController6 = self.storyboard?.instantiateViewController(withIdentifier: "AssignmentVC") as! AssignmentViewController
                                            
-                                        self.navigationController?.pushViewController(newViewController6, animated: true)
+            self.sender?.navigationController?.pushViewController(newViewController6, animated: true)
                                  
                              
                              }
         if indexPath.row == 7 {
+            dismissThisView()
                                  let newViewController7 = self.storyboard?.instantiateViewController(withIdentifier: "ReviewExamVC") as! ReviewExamViewController
                                            
-                                        self.navigationController?.pushViewController(newViewController7, animated: true)
+            self.sender?.self.navigationController?.pushViewController(newViewController7, animated: true)
                                  
                              
                              }
         
         
         if indexPath.row == 8 {
+            dismissThisView()
             let newViewController8 = self.storyboard?.instantiateViewController(withIdentifier: "AnswerSheetVC") as! AnswerSheetViewController
                       
-                   self.navigationController?.pushViewController(newViewController8, animated: true)
+            self.sender?.navigationController?.pushViewController(newViewController8, animated: true)
             
         
         }
         
         if indexPath.row == 9 {
+            dismissThisView()
             let newViewController9 = self.storyboard?.instantiateViewController(withIdentifier: "MyFavoritesVC") as! MyFavoritesViewController
                       
-                   self.navigationController?.pushViewController(newViewController9, animated: true)
+            self.sender?.navigationController?.pushViewController(newViewController9, animated: true)
+            
+        
+        }
+        if indexPath.row == 9 {
+            dismissThisView()
+            let newViewController9 = self.storyboard?.instantiateViewController(withIdentifier: "MyFavoritesVC") as! MyFavoritesViewController
+                      
+            self.sender?.navigationController?.pushViewController(newViewController9, animated: true)
             
         
         }

@@ -55,6 +55,12 @@ class ProfileViewController: UIViewController {
         }
         
     }
+    
+    
+    
+    
+    
+    
     func heightTextFiled (nameYourTextFiled:UITextField,height:CGFloat){
         
        nameYourTextFiled.frame = CGRect(x: nameYourTextFiled.frame.origin.x, y: nameYourTextFiled.frame.origin.y, width: nameYourTextFiled.frame.size.width, height: height)

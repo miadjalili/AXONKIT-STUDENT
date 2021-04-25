@@ -73,7 +73,7 @@ extension SideMenuViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      tableView.deselectRow(at: indexPath, animated: true)
     
-        print(indexPath.row)
+      
     
         if indexPath.row == 0 {
      

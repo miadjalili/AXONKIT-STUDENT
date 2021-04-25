@@ -11,16 +11,14 @@ import SideMenu
 
 class CategorirsViewController: UIViewController {
     
+    var LeftBtn : SideMenuNavigationController?
    
     @IBOutlet weak var CollectionView: UICollectionView!
-    var LeftBtn : SideMenuNavigationController?
+   
     @IBAction func searchItenBTn(_ sender: UIBarButtonItem) {
         
-       print("lknjknkjnkj")
     
          //navigationItem.title  = ""
-        
-        
         
         
     }
@@ -44,9 +42,9 @@ class CategorirsViewController: UIViewController {
         CollectionView.dataSource =  self
         navigationItem.title  = "Categories"
         let contoroler = self.storyboard?.instantiateViewController(withIdentifier: "SiddMenuIde") as! SideMenuViewController
-        LeftBtn = SideMenuNavigationController(rootViewController: contoroler)
-        LeftBtn?.leftSide = true
-        
+       // LeftBtn = SideMenuNavigationController(rootViewController: contoroler)
+      //  LeftBtn?.leftSide = true
+        self.addSideMenu()
         
         
         
@@ -104,6 +102,25 @@ extension CategorirsViewController :  UICollectionViewDelegate,UICollectionViewD
         
     }
     
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
+        
+        print("okkkk")
+        print(indexPath)
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenSize: CGRect = UIScreen.main.bounds
@@ -118,6 +135,8 @@ extension CategorirsViewController :  UICollectionViewDelegate,UICollectionViewD
                    widthSize = 172
                    heightsize = 125
                }
+        
+        
         //iphone11/6+/7+/8+
         if screenSize.width == 414 {
             widthSize = 191
@@ -126,9 +145,6 @@ extension CategorirsViewController :  UICollectionViewDelegate,UICollectionViewD
         
         return CGSize(width: widthSize, height: heightsize)
     }
-    
-    
-    
     
     
     

@@ -13,12 +13,15 @@ class TasksViewController: UIViewController {
     
     var toolBar = UIToolbar()
     var datePicker: UIDatePicker!
-    
+    var dateOne : Date?
+    var dateTwo: Date?
     
     @IBOutlet weak var taskView: UIView!
     @IBOutlet weak var fromDateBTn: UIButton!
     @IBOutlet weak var tagLabel: UILabel!
     @IBOutlet weak var tagBTn: UIButton!
+    
+    @IBOutlet weak var totalDuration: UILabel!
     
     
     
@@ -84,9 +87,10 @@ class TasksViewController: UIViewController {
         datePicker.minimumDate = Calendar.current.date(byAdding: .year, value: 0, to: Date())
         datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 20, to: Date())
         
+        datePicker.preferredDatePickerStyle = .wheels
         datePicker.backgroundColor = UIColor.white
         datePicker.autoresizingMask = .flexibleWidth
-        datePicker.datePickerMode = .date
+        datePicker.datePickerMode = .dateAndTime
         
         
         
@@ -106,13 +110,14 @@ class TasksViewController: UIViewController {
     }
     @objc func dateChanged(_ sender: UIDatePicker?) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM dd yyyy"
+        dateFormatter.dateFormat = " yyyy-MM-dd HH:mm:ss"
        
             
         if let date = sender?.date {
           //  print("Picked the date \(dateFormatter.string(from: date))")
     //        if fromDateBTn.isSelected == true{
             fromDateBTn.setTitle(dateFormatter.string(from: date), for: .normal)
+            dateOne = date
   //          }
 //            if toDateBTn.isSelected == true{
 //                toDateBTn.setTitle(dateFormatter.string(from: date), for: .normal)
@@ -138,9 +143,10 @@ class TasksViewController: UIViewController {
             datePicker.minimumDate = Calendar.current.date(byAdding: .year, value: 0, to: Date())
             datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 20, to: Date())
             
-            datePicker.backgroundColor = UIColor.white
-            datePicker.autoresizingMask = .flexibleWidth
-            datePicker.datePickerMode = .date
+        datePicker.preferredDatePickerStyle = .wheels
+        datePicker.backgroundColor = UIColor.white
+        datePicker.autoresizingMask = .flexibleWidth
+        datePicker.datePickerMode = .dateAndTime
             
             
             
@@ -161,7 +167,7 @@ class TasksViewController: UIViewController {
     }
     @objc func dateeChanged(_ sender: UIDatePicker?) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM dd yyyy"
+        dateFormatter.dateFormat = " yyyy-MM-dd HH:mm:ss"
        
             
         if let date = sender?.date {
@@ -170,6 +176,21 @@ class TasksViewController: UIViewController {
             
             
                 toDateBTn.setTitle(dateFormatter.string(from: date), for: .normal)
+            let form = DateComponentsFormatter()
+            form.maximumUnitCount = 4
+            form.unitsStyle = .full
+            form.allowedUnits = [.year, .month, .day, .hour ]
+            
+            if dateOne != nil {
+            
+            let s = form.string(from: dateOne!, to: date)
+            
+            
+            totalDuration.text = s
+            }else{
+                print("first compelete from")
+            }
+
             
         }
     }

@@ -1,20 +1,18 @@
 //
-//  assignmentsListViewController.swift
+//  CreateObjectionViewController.swift
 //  AXONKIT-STUDENT
 //
-//  Created by miadjalili on 12/19/20.
-//  Copyright © 2020 MIAD. All rights reserved.
+//  Created by miadjalili on 4/27/21.
+//  Copyright © 2021 MIAD. All rights reserved.
 //
 
 import UIKit
 
-class AssignmentsListViewController: UIViewController {
+class CreateObjectionViewController: UIViewController {
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Select an Assignment"
+        navigationItem.title = "Create Objection"
         // Do any additional setup after loading the view.
     }
     

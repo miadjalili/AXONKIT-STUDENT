@@ -182,13 +182,13 @@ extension SideMenuContainer : UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.row == 9 {
             dismissThisView()
-            let newViewController9 = self.storyboard?.instantiateViewController(withIdentifier: "MyFavoritesVC") as! MyFavoritesViewController
+            let newViewController9 = self.storyboard?.instantiateViewController(withIdentifier: "ObjectionReviewVC") as! ObjectionReviewViewController
                       
             self.sender?.navigationController?.pushViewController(newViewController9, animated: true)
             
         
         }
-        if indexPath.row == 9 {
+        if indexPath.row == 10 {
             dismissThisView()
             let newViewController9 = self.storyboard?.instantiateViewController(withIdentifier: "MyFavoritesVC") as! MyFavoritesViewController
                       
@@ -197,7 +197,23 @@ extension SideMenuContainer : UITableViewDelegate, UITableViewDataSource {
         
         }
         
+        if indexPath.row == 11 {
+            dismissThisView()
+            let newViewController9 = self.storyboard?.instantiateViewController(withIdentifier: "ParentsAreaVC") as! ParentsAreaViewController
+                      
+            self.sender?.navigationController?.pushViewController(newViewController9, animated: true)
+            
+        
+        }
+        if indexPath.row == 12 {
+            dismissThisView()
+            let newViewController9 = self.storyboard?.instantiateViewController(withIdentifier: "SettingVC") as! SettingViewController
+                      
+            self.sender?.navigationController?.pushViewController(newViewController9, animated: true)
+            
+        }
         
     }
     
 }
+

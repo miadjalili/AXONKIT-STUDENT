@@ -31,6 +31,7 @@
 		8C46DF0E2597955C00D8048B /* ReviewExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C46DF0D2597955C00D8048B /* ReviewExamViewController.swift */; };
 		8C46DF102597971800D8048B /* ReviewExamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C46DF0F2597971800D8048B /* ReviewExamTableViewCell.swift */; };
 		8C57CDDD25A1A4EA002B428B /* UpcomingEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C57CDDC25A1A4EA002B428B /* UpcomingEventsTableViewCell.swift */; };
+		8C5997BF263809C5005EE435 /* CreateObjectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5997BE263809C5005EE435 /* CreateObjectionViewController.swift */; };
 		8C5E03A5257619790091D58A /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E03A4257619790091D58A /* SideMenuTableViewCell.swift */; };
 		8C603279256CDAFD00A93C23 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C603278256CDAFD00A93C23 /* SigninViewController.swift */; };
 		8C60327B256CDB3400A93C23 /* DefaultlanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C60327A256CDB3400A93C23 /* DefaultlanguageViewController.swift */; };
@@ -54,7 +55,6 @@
 		8C9E60CD2584D4DE005C7093 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E60CC2584D4DE005C7093 /* ProfileViewController.swift */; };
 		8CAF45F92574E6C2001B7449 /* sideMenuDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF45F82574E6C2001B7449 /* sideMenuDataModel.swift */; };
 		8CC2C752258DEB21007E5B0A /* AssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2C751258DEB21007E5B0A /* AssignmentViewController.swift */; };
-		8CC2C754258E0128007E5B0A /* AssignmentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2C753258E0128007E5B0A /* AssignmentsListViewController.swift */; };
 		8CC2C756258E0750007E5B0A /* AnswerSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2C755258E0750007E5B0A /* AnswerSheetViewController.swift */; };
 		8CC2C758258E078E007E5B0A /* AnswerSheetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2C757258E078E007E5B0A /* AnswerSheetDetailsViewController.swift */; };
 		8CC2C75A258E083F007E5B0A /* AnswerSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2C759258E083F007E5B0A /* AnswerSheetTableViewCell.swift */; };
@@ -91,6 +91,8 @@
 		8CDE16832588AB1F003E01CE /* InviteFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDE16822588AB1E003E01CE /* InviteFriendsViewController.swift */; };
 		8CDE16852588C21C003E01CE /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDE16842588C21C003E01CE /* TasksViewController.swift */; };
 		8CE68D7B25A466F100A04415 /* ModelCheckClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE68D7A25A466F100A04415 /* ModelCheckClass.swift */; };
+		8CF79CC526392FD300D1F64D /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF79CC426392FD300D1F64D /* AnnouncementsViewController.swift */; };
+		8CF79CCC2639492800D1F64D /* AnnouncementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF79CCB2639492800D1F64D /* AnnouncementsTableViewCell.swift */; };
 		8CFFEDB1262FF72500B5A951 /* SignupFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFFEDB0262FF72500B5A951 /* SignupFinalViewController.swift */; };
 		8CFFEDB42630003D00B5A951 /* ListOfCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFFEDB32630003D00B5A951 /* ListOfCourseViewController.swift */; };
 		8CFFEDB72630006500B5A951 /* EachCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFFEDB62630006500B5A951 /* EachCourseViewController.swift */; };
@@ -136,6 +138,7 @@
 		8C46DF0D2597955C00D8048B /* ReviewExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewExamViewController.swift; sourceTree = "<group>"; };
 		8C46DF0F2597971800D8048B /* ReviewExamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewExamTableViewCell.swift; sourceTree = "<group>"; };
 		8C57CDDC25A1A4EA002B428B /* UpcomingEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsTableViewCell.swift; sourceTree = "<group>"; };
+		8C5997BE263809C5005EE435 /* CreateObjectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateObjectionViewController.swift; sourceTree = "<group>"; };
 		8C5E03A4257619790091D58A /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		8C603278256CDAFD00A93C23 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		8C60327A256CDB3400A93C23 /* DefaultlanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultlanguageViewController.swift; sourceTree = "<group>"; };
@@ -159,7 +162,6 @@
 		8C9E60CC2584D4DE005C7093 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8CAF45F82574E6C2001B7449 /* sideMenuDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideMenuDataModel.swift; sourceTree = "<group>"; };
 		8CC2C751258DEB21007E5B0A /* AssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentViewController.swift; sourceTree = "<group>"; };
-		8CC2C753258E0128007E5B0A /* AssignmentsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsListViewController.swift; sourceTree = "<group>"; };
 		8CC2C755258E0750007E5B0A /* AnswerSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerSheetViewController.swift; sourceTree = "<group>"; };
 		8CC2C757258E078E007E5B0A /* AnswerSheetDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerSheetDetailsViewController.swift; sourceTree = "<group>"; };
 		8CC2C759258E083F007E5B0A /* AnswerSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerSheetTableViewCell.swift; sourceTree = "<group>"; };
@@ -196,6 +198,8 @@
 		8CDE16822588AB1E003E01CE /* InviteFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewController.swift; sourceTree = "<group>"; };
 		8CDE16842588C21C003E01CE /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		8CE68D7A25A466F100A04415 /* ModelCheckClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCheckClass.swift; sourceTree = "<group>"; };
+		8CF79CC426392FD300D1F64D /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
+		8CF79CCB2639492800D1F64D /* AnnouncementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsTableViewCell.swift; sourceTree = "<group>"; };
 		8CFFEDB0262FF72500B5A951 /* SignupFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFinalViewController.swift; sourceTree = "<group>"; };
 		8CFFEDB32630003D00B5A951 /* ListOfCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCourseViewController.swift; sourceTree = "<group>"; };
 		8CFFEDB62630006500B5A951 /* EachCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachCourseViewController.swift; sourceTree = "<group>"; };
@@ -327,7 +331,6 @@
 				8CDE16822588AB1E003E01CE /* InviteFriendsViewController.swift */,
 				8CDE16842588C21C003E01CE /* TasksViewController.swift */,
 				8CC2C751258DEB21007E5B0A /* AssignmentViewController.swift */,
-				8CC2C753258E0128007E5B0A /* AssignmentsListViewController.swift */,
 				8C46DF0D2597955C00D8048B /* ReviewExamViewController.swift */,
 				8C46DF0F2597971800D8048B /* ReviewExamTableViewCell.swift */,
 				8CC2C755258E0750007E5B0A /* AnswerSheetViewController.swift */,
@@ -355,6 +358,9 @@
 				8CFFEDB32630003D00B5A951 /* ListOfCourseViewController.swift */,
 				8CFFEDB62630006500B5A951 /* EachCourseViewController.swift */,
 				8CFFEDB92630076500B5A951 /* ListOfCourseTableViewCell.swift */,
+				8C5997BE263809C5005EE435 /* CreateObjectionViewController.swift */,
+				8CF79CC426392FD300D1F64D /* AnnouncementsViewController.swift */,
+				8CF79CCB2639492800D1F64D /* AnnouncementsTableViewCell.swift */,
 			);
 			path = Contoroller;
 			sourceTree = "<group>";
@@ -550,6 +556,7 @@
 				8CC965E42573AD9100309296 /* AudioCell.swift in Sources */,
 				8CC965CF2573AD6A00309296 /* AttachFileController.swift in Sources */,
 				8C46DF0E2597955C00D8048B /* ReviewExamViewController.swift in Sources */,
+				8CF79CC526392FD300D1F64D /* AnnouncementsViewController.swift in Sources */,
 				8C13A55725723E7B0071A53C /* SideMenuViewController.swift in Sources */,
 				8C603279256CDAFD00A93C23 /* SigninViewController.swift in Sources */,
 				8CC965CC2573AD6A00309296 /* MicStudentController.swift in Sources */,
@@ -561,7 +568,6 @@
 				8CDE168125888CDF003E01CE /* EducationalDossierTableViewCell.swift in Sources */,
 				8C60327B256CDB3400A93C23 /* DefaultlanguageViewController.swift in Sources */,
 				8C6AAF2125A0576500CD169B /* MyFavoritesViewController.swift in Sources */,
-				8CC2C754258E0128007E5B0A /* AssignmentsListViewController.swift in Sources */,
 				8C6AAF2525A05A2600CD169B /* MyFavoritesTableViewCell.swift in Sources */,
 				8CFFEDB72630006500B5A951 /* EachCourseViewController.swift in Sources */,
 				8C1CCE4325963A22004A2367 /* UserHolder.swift in Sources */,
@@ -572,12 +578,14 @@
 				8C6815D825A0BE2C0018A7B5 /* ChildsEducationalDossierViewController.swift in Sources */,
 				8CDE167F25888C7E003E01CE /* EducationalDossierViewController.swift in Sources */,
 				8CC2C758258E078E007E5B0A /* AnswerSheetDetailsViewController.swift in Sources */,
+				8C5997BF263809C5005EE435 /* CreateObjectionViewController.swift in Sources */,
 				8CD1CEC9257FA738005C1A9B /* CalenderTableViewCell.swift in Sources */,
 				8C1EDF53256BB755002D6F6E /* SceneDelegate.swift in Sources */,
 				8C33FC5F256FB867000BE55C /* TabBarViewController.swift in Sources */,
 				8CC965EA2573ADA100309296 /* Modellessonname.swift in Sources */,
 				8C3F5A1F256CE3A600377B40 /* LanguageTableViewCell.swift in Sources */,
 				8CDE16852588C21C003E01CE /* TasksViewController.swift in Sources */,
+				8CF79CCC2639492800D1F64D /* AnnouncementsTableViewCell.swift in Sources */,
 				8CD071C025873F5D005B79E2 /* ManagerOffLineCourseTableViewCell.swift in Sources */,
 				8C9B287D259F1D9100AD4B5E /* ObjectionReviewViewController.swift in Sources */,
 				8C6815D425A0BBEF0018A7B5 /* PostedNotesatViewController.swift in Sources */,

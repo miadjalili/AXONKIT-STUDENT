@@ -26,11 +26,11 @@ enum sideMenuTitles:String {
     case Invitefriends  = "Invite friends "
     case MyTasks = "My Tasks"
     case Assignment  = "Assignment "
-    case ReviewExam = "review Exam"
+   // case ReviewExam = "review Exam"
     case AnswerSheets = "Answer Sheets"
     case Objectionreview = "Objection review"
-    case Favorite = "Favorite"
-    case ParentsArea = "Parents Area"
+   // case Favorite = "Favorite"
+   // case ParentsArea = "Parents Area"
     case Setting = "Setting"
     case none = ""
 }
@@ -56,11 +56,11 @@ class SideMenuDataManager {
             sideMenuDataModel(title: .Invitefriends, value: 0, icon: setImage(forTitle: .Invitefriends)),
             sideMenuDataModel(title: .MyTasks, value: 4, icon: setImage(forTitle: .MyTasks)),
             sideMenuDataModel(title: .Assignment, value: 0, icon: setImage(forTitle: .Assignment)),
-            sideMenuDataModel(title: .ReviewExam, value: 0, icon: setImage(forTitle: .ReviewExam)),
+           // sideMenuDataModel(title: .ReviewExam, value: 0, icon: setImage(forTitle: .ReviewExam)),
             sideMenuDataModel(title: .AnswerSheets, value: 0, icon: setImage(forTitle: .AnswerSheets)),
             sideMenuDataModel(title: .Objectionreview, value: 0, icon: setImage(forTitle: .Objectionreview)),
-            sideMenuDataModel(title: .Favorite, value: 0, icon: setImage(forTitle: .Favorite)),
-            sideMenuDataModel(title: .ParentsArea, value: 0, icon: setImage(forTitle: .ParentsArea)),
+          //  sideMenuDataModel(title: .Favorite, value: 0, icon: setImage(forTitle: .Favorite)),
+           // sideMenuDataModel(title: .ParentsArea, value: 0, icon: setImage(forTitle: .ParentsArea)),
             sideMenuDataModel(title: .Setting, value: 0, icon: setImage(forTitle: .Setting))
         ]
                 
@@ -102,10 +102,10 @@ class SideMenuDataManager {
 //            image = nightMode ?
 //                UIImage(named: "settings_icon_dark")! :
                image = UIImage(systemName: "checkmark.rectangle")!
-        case .ReviewExam:
+     //   case .ReviewExam:
 //            image = nightMode ?
 //                UIImage(named: "contactUs_dark")! :
-               image = UIImage(systemName: "archivebox")!
+            //   image = UIImage(systemName: "archivebox")!
         case .AnswerSheets:
 //            image = nightMode ?
 //                UIImage(named: "help_circle_dark")! :
@@ -114,12 +114,12 @@ class SideMenuDataManager {
 //            image = nightMode ?
 //                UIImage(named: "logout_dark")! :
              image = UIImage(systemName: "hand.raised.fill")!
-        case .Favorite:
+        //case .Favorite:
 //            image = nightMode ?
 //                UIImage(named: "appstore_dark")! :
-               image = UIImage(systemName: "heart")!
-        case .ParentsArea:
-           image = UIImage(systemName: "person.crop.rectangle")!
+             //  image = UIImage(systemName: "heart")!
+       // case .ParentsArea:
+          // image = UIImage(systemName: "person.crop.rectangle")!
         case .Setting:
             image = UIImage(systemName: "gear")!
            // image = UIImage()

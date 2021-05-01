@@ -126,46 +126,46 @@ extension SideMenuViewController: UITableViewDataSource,UITableViewDelegate {
                                  
                              
                              }
+//        if indexPath.row == 7 {
+//                                 let newViewController7 = self.storyboard?.instantiateViewController(withIdentifier: "ReviewExamVC") as! ReviewExamViewController
+//
+//                                        self.navigationController?.pushViewController(newViewController7, animated: true)
+//
+//
+//                             }
+        
+        
         if indexPath.row == 7 {
-                                 let newViewController7 = self.storyboard?.instantiateViewController(withIdentifier: "ReviewExamVC") as! ReviewExamViewController
-                                           
-                                        self.navigationController?.pushViewController(newViewController7, animated: true)
-                                 
-                             
-                             }
-        
-        
-        if indexPath.row == 8 {
             let newViewController8 = self.storyboard?.instantiateViewController(withIdentifier: "AnswerSheetVC") as! AnswerSheetViewController
                       
                    self.navigationController?.pushViewController(newViewController8, animated: true)
             
         
         }
-        if indexPath.row == 9 {
+        if indexPath.row == 8 {
             let newViewController9 = self.storyboard?.instantiateViewController(withIdentifier: "ObjectionReviewVC") as! ObjectionReviewViewController
                       
                    self.navigationController?.pushViewController(newViewController9, animated: true)
             
         
         }
-        if indexPath.row == 10 {
-            let newViewController10 = self.storyboard?.instantiateViewController(withIdentifier: "MyFavoritesVC") as! MyFavoritesViewController
-                      
-                   self.navigationController?.pushViewController(newViewController10, animated: true)
-            
+//        if indexPath.row == 10 {
+//            let newViewController10 = self.storyboard?.instantiateViewController(withIdentifier: "MyFavoritesVC") as! MyFavoritesViewController
+//
+//                   self.navigationController?.pushViewController(newViewController10, animated: true)
+//
+//
+//        }
         
-        }
+//        if indexPath.row == 11 {
+//            let newViewController11 = self.storyboard?.instantiateViewController(withIdentifier: "ParentsAreaVC") as! ParentsAreaViewController
+//
+//                   self.navigationController?.pushViewController(newViewController11, animated: true)
+//
+//
+//        }
         
-        if indexPath.row == 11 {
-            let newViewController11 = self.storyboard?.instantiateViewController(withIdentifier: "ParentsAreaVC") as! ParentsAreaViewController
-                      
-                   self.navigationController?.pushViewController(newViewController11, animated: true)
-            
-        
-        }
-        
-        if indexPath.row == 12 {
+        if indexPath.row == 9 {
             let newViewController12 = self.storyboard?.instantiateViewController(withIdentifier: "SettingVC") as! SettingViewController
 
                    self.navigationController?.pushViewController(newViewController12, animated: true)
